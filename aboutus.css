@@ -1,0 +1,69 @@
+body {
+    background-color: gray;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 10px;
+    color: red;
+}
+
+#accordionExample {
+    margin: auto;
+}
+
+.accordion-header {
+    color: red;
+}
+
+.card-group {
+    margin: auto;
+}
+
+.card-group .card {
+    margin: 1rem;
+}
+
+.ul-li {
+    list-style: none;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-f {
+    margin: auto;
+}
+
+.card {
+    margin: auto;
+}
+
+card-img-top {
+    background-position: center;
+}
+
+.accordion {
+    padding: 10px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+footer {
+    margin: auto;
+    padding: 1rem;
+    background-color: beige;
+    color: lightslategray;
+}
+
+.ul-moderation {
+    list-style: none;
+    color: red;
+}

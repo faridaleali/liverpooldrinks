@@ -1,0 +1,14 @@
+    h1 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    footer {
+        background-color: lightslategray;
+        color: antiquewhite;
+        padding: 2rem;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        border-radius: 5px;
+    }
