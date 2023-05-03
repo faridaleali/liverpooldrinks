@@ -1,0 +1,147 @@
+body {
+    background-color: gray;
+    scroll-behavior: smooth;
+}
+
+/**************************Navbar*******************************/
+  
+.navbarStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 1030;
+  background-color:#774b42;
+}
+
+.navbarContainer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarItemdecoration {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbarOptions {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff
+}
+
+.mainFounderPhoto {
+    width: 500px;
+    height: 455px;
+}
+
+/**************************Main*******************************/
+
+h1, h2, h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 10px;
+    color: red;
+}
+
+#accordionExample {
+    margin: auto;
+}
+
+.accordion-header {
+    color: red;
+}
+
+.card-group {
+    margin: auto;
+}
+
+.card-group .card {
+    margin: 1rem;
+}
+
+.ul-li {
+    list-style: none;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-f {
+    margin: auto;
+}
+
+.card {
+    margin: auto;
+}
+
+card-img-top {
+    background-position: center;
+}
+
+.accordion {
+    padding: 10px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.ul-moderation {
+    list-style: none;
+    color: red;
+}
+
+/**************************Footer*******************************/
+
+ul li {
+    list-style: none;
+}
+  
+.footerGeneral {
+  color: antiquewhite;
+}
+  
+.footerTitle {
+  color: red;
+  font-size: 2rem;
+}
+  
+.aboutus {
+  font-size: 30px;
+  color: antiquewhite;
+  text-decoration: none;
+  border-bottom: 2px solid gray;
+  display: inline-block;
+}
+  
+.aboutus:hover {
+  color: red;
+}
+  
+.footerList:hover {
+  background-color: lightslategray;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  width: fit-content;
+  color: black;
+  cursor: pointer;
+}
+  
+.logo {
+  border-radius: 50%;
+  width: 80%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-left: 2rem;
+}
+  
+.copy {
+  /* border-bottom: 2px solid gray; */
+  padding-top: 10px;
+  display: inline-block;
+}
+  

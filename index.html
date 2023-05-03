@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="./index.css" class="css">
+
+    <!-- FUENTES DE GOOGLE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Footer -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <title>Liverpool Drinks - Home</title>
+
+</head>
+<body>
+    <header>
+        <!-----------------------------NAVBAR----------------------------------->
+        <nav class="navbar navbarStyle navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light navbarOptions" href="#">Liverpool Drinks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbarContainer" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item navbarItemdecoration">
+                  <a class="nav-link active text-light navbarOptions" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item navbarItemdecoration">
+                  <a class="nav-link text-light navbarOptions" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown navbarItemdecoration">
+                  <a class="nav-link dropdown-toggle text-light navbarOptions" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Log in
+                  </a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-light navbarItemdecoration navbarOptions" href="./error404.html">Recover account</a></li>
+                    <li><a class="dropdown-item text-light navbarItemdecoration navbarOptions" href="./register.html">Register
+                    </a></li>
+                    <li><hr class="mt-2 mb-1 p-0 dropdown-divider text-light"></li>
+                    <li><a class="dropdown-item text-light navbarItemdecoration mb-1 navbarOptions" href="./singin.html">Sign in</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item navbarItemdecoration">
+                  <a class="nav-link text-light navbarOptions" href="./aboutus.html">About us</a>
+                </li>
+                  <a class="btn btn-outline-danger text-light navbarOptions" href="./buy.html" type="submit">Go shopping <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search products" aria-label="Buscar">
+                <button class="ms-3 btn btn-danger" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      <!-----------------------------NAVBAR----------------------------------->
+    </header>
+    <main>
+      <!-------------------------------- Carousel -------------------------------->
+      <div class="" style="height: 670px">
+        <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner border-bottom border-2 border-dark">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="Assets/Img/banner1.jpg" alt="Banner inicio 1" class="d-block w-100" style="height: 670px; object-fit: cover;">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="Assets/Img/banner2.jpg" alt="Banner inicio 2" class="d-block w-100" style="height: 670px; object-fit: cover;">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="Assets/Img/banner3.jpg" alt="Banner inicio 3" class="d-block w-100" style="height: 670px; object-fit: cover;">
+            </div>
+            <div class="carousel-caption d-md-block top-50">
+              <h2 class="textShadow fs-1">Liverpool Drinks</h5>
+              <p class="textShadow fs-4">Wholesale and retail</p>
+              <div class="btn btn-danger btn-small swiper-btn mt-4 px-4"><a href="#mainPromos" class="text-decoration-none text-reset">Sales!</a></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-------------------------------- Publicidades -------------------------------->
+      <div class="mainVisibility">
+        <h2 class="text-center mt-4 mb-4 display-4">Ad video</h2>
+        <iframe width="750" height="400" src="https://www.youtube.com/embed/d194HTo_Px4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" class=""></iframe>
+      </div>
+      <hr>
+      <!-------------------------------- Categorias -------------------------------->
+      <div class="container">
+        <h2 class="text-center mt-4 mb-4 display-3">Categories</h2>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="mt-3 mainCategories">
+              <a href="./whiskys.html">
+                <img src="Assets/Img/whiskys.jpg" class="card-img-top animationEffect w-100" alt="Imagen whisky">
+              </a>
+              <h2>Whiskys</h2>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mt-3 mainCategories">
+              <a href="./error404.html">
+                <img src="Assets/Img/gins.png" class="card-img-top animationEffect w-100" alt="Imagen gin's">
+              </a>
+              <h2>Gin's</h2>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mt-3 mainCategories">
+              <a href="./error404.html">
+                <img src="Assets/Img/vinos.png" class="card-img-top animationEffect w-100" alt="Imagen vinos">
+              </a>
+              <h2>Wines</h2>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mt-3 mainCategories">
+              <a href="./vodkas.html">
+                <img src="Assets/Img/vodkas.png" class="card-img-top animationEffect w-100" alt="Imagen vodkas">
+              </a>
+              <h2>Vodkas</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-------------------------------- Promociones -------------------------------->
+      <div id="mainPromos">
+        <h2 class="text-center mt-4 mb-4 display-3">Sales!</h2>
+        <div class="row me-0 ms-0">
+          <div class="col-sm-3 text-center">
+            <div class="boxPromo mb-3">
+              <img src="Assets/Img/smirnoffGold.jpg" class="card-img-top w-50 mx-auto" alt="Vodka smirnoff gold">
+              <div class="card-body">
+                <h5 class="card-title">Smirnoff Gold 700ml</h5>
+                <p class="card-text">AR$13.999</p>
+                <a href="#" class="btn btn-danger mb-3">View product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="boxPromo mb-3">
+              <img src="Assets/Img/absoluteRaspberri.jpg" class="card-img-top w-50 mx-auto" alt="Vodka absolut raspberri">
+              <div class="card-body">
+                <h5 class="card-title">Absolut Raspberri 700ml</h5>
+                <p class="card-text">AR$4.250</p>
+                <a href="./product.html" class="btn btn-danger mb-3">View product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="boxPromo mb-3">
+              <img src="Assets/Img/jwBlackLabel.jpg" class="card-img-top w-50 mx-auto" alt="Whisky jw blacklaber">
+              <div class="card-body">
+                <h5 class="card-title">Johnnie Walker Black Label 1lt</h5>
+                <p class="card-text">AR$10.499</p>
+                <a href="./product2.html" class="btn btn-danger mb-3">View product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="boxPromo mb-3">
+              <img src="Assets/Img/dadaBlanco.jpg" class="card-img-top w-50 mx-auto" alt="Vino dada White">
+              <div class="card-body">
+                <h5 class="card-title">Dada White 750ml</h5>
+                <p class="card-text">AR$999</p>
+                <a href="#" class="btn btn-danger mb-3">View product</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  <!----------------------FOOTER--------------------------- -->
+  <footer>
+    <div class="pt-3 bg-dark mt-5 footerGeneral">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2  justify-content-center align-item-center">
+                <img class="logo" src="Assets/Img/logo1.jpg" alt="logo de bebidas">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-content-center flex-column">
+                <ul class="d-flex flex-column">
+                    <li class="footerTitle">Shopping</li>
+                    <li class="footerList">Trending Drinks</li>
+                    <li class="footerList">Store</li>
+                    <li class="footerList">Sale</li>
+                    <li class="footerList">Kind of drinks</li>
+                </ul>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-content-center flex-column">
+                <ul class="d-flex flex-column">
+                    <li class="footerTitle">Marks</li>
+                    <li class="footerList">Coca Cola</li>
+                    <li class="footerList">Vittone</li>
+                    <li class="footerList">Corona</li>
+                    <li class="footerList">Beefeater</li>
+                </ul>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-content-center flex-column">
+                <ul class="d-flex flex-column">
+                    <li class="footerTitle">Link</li>
+                    <li class="footerList">Contact Us</li>
+                    <li class="footerList">Payment Methods</li>
+                    <li class="footerList">Delivery</li>
+                    <li class="footerList">Return & Exchanges</li>
+                </ul>
+            </div>
+            <div class="col-md-12 text-center">
+                <a href="aboutus.html" class="aboutus">About Us</a> <span class="material-symbols-outlined ">autorenew</span></p>
+            </div>
+            <div class="col-md-12 text-center">
+                <p class="copy">Copyright &copy; 2023 all right reserved | This template is made with <span class="material-symbols-outlined">favorite.</span></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

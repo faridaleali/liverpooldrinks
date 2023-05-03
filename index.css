@@ -1,0 +1,133 @@
+/**************************Navbar*******************************/
+.navbarStyle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 1030;
+    background-color: black;
+    background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.navbarContainer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.navbarItemdecoration {
+  display: inline-block;
+  margin-right: 20px;
+}
+  
+.navbarOptions {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff
+}
+
+ /**************************MAIN*******************************/
+
+
+/* CSS Main */
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+@keyframes rotate-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.animationEffect:hover {
+    animation: rotate-shaking 0.25s linear 1.5;
+}
+
+.boxPromo:hover {
+    transform: scale(110%);
+    transition: 0.25s;
+}
+
+.textShadow {
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+    color: rgb(37, 33, 33);
+}
+
+.mainCategories:hover {
+    transform: scale(110%);
+    transition: 0.25s;
+}
+
+@media only screen and (max-width: 538px) {
+  .mainVisibility {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 539px) {
+  .mainVisibility {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/**************************Footer*******************************/
+
+ul li {
+  list-style: none;
+}
+
+.footerGeneral {
+  color: antiquewhite;
+}
+
+.footerTitle {
+  color: red;
+  font-size: 2rem;
+}
+
+.aboutus {
+  font-size: 30px;
+  color: antiquewhite;
+  text-decoration: none;
+  border-bottom: 2px solid gray;
+  display: inline-block;
+}
+
+.aboutus:hover {
+  color: red;
+}
+
+.footerList:hover {
+  background-color: lightslategray;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  width: fit-content;
+  color: black;
+  cursor: pointer;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 80%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.copy {
+  /* border-bottom: 2px solid gray; */
+  padding-top: 10px;
+  display: inline-block;
+}

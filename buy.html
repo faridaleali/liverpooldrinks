@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./buy.css" class="css">
+    <title>Buy</title>
+</head>
+<body>
+    <header>
+        <!-----------------------------NAVBAR----------------------------------->
+        <nav class="navbar navbarStyle navbar-expand-lg navbar fixed-top text-light">
+          <div class="container-fluid text-light">
+            <a class="navbar-brand text-light navbarOptions" href="#">Liverpool Drinks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbarContainer" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item navbarItemdecoration">
+                  <a class="nav-link active text-light navbarOptions" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item navbarItemdecoration">
+                  <a class="nav-link text-light navbarOptions" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown navbarItemdecoration">
+                  <a class="nav-link dropdown-toggle text-light navbarOptions" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Log in
+                  </a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-light navbarItemdecoration navbarOptions" href="./error404.html">Recover account</a></li>
+                    <li><a class="dropdown-item text-light navbarItemdecoration navbarOptions" href="./register.html">Register
+                    </a></li>
+                    <li><hr class="mt-2 mb-1 p-0 dropdown-divider text-light"></li>
+                    <li><a class="dropdown-item text-light navbarItemdecoration mb-1 navbarOptions" href="./singin.html">Sign in</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item navbarItemdecoration">
+                  <a class="nav-link text-light navbarOptions" href="./aboutus.html">About us</a>
+                </li>
+                  <a class="btn btn-outline-danger text-light navbarOptions" href="./buy.html" type="submit">Go shopping <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search products" aria-label="Buscar">
+                <button class="ms-3 btn btn-danger" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container pt-5 mt-5">
+            <div class="row">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-3">
+                        <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none text-reset">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="./buy.html" class="text-decoration-none text-reset">Buy</a></li>
+                    </ol>
+                </nav>
+                <form class="row col-sm-8 mb-4 g-2">
+                    <h2>User data</h2>
+                    <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+                        <div class="progress-bar" style="width: 50%"></div>
+                    </div>
+                    <hr>
+                    <div class="mb-3 col-sm-12">
+                        <label class="form-label" for="Coupon">Discount Code</label>
+                        <input id="coupon" aria-labelledby="Coupon" placeholder="" name="Coupon" class="form-control w-75" type="text" autocomplete="off" value="">
+                        <div id="couponHelp" class="form-text">If your have a coupon code, type here!</div>
+                    </div>
+                    <hr>
+                    <div class="mb-3 col-sm-5">
+                        <label for="InputName">First Name</label>
+                        <input type="text" class="form-control w-75" id="InputName" aria-describedby="firstnameHelp" required>
+                        <div id="firstnameHelp" class="form-text">Example: Selena</div>
+                    </div>
+                    <div class="mb-3 col-sm-4">
+                        <label for="InputLastName">Last Name</label>
+                        <input type="text" class="form-control w-100" id="InputLastName" aria-describedby="lastnameHelp" required>
+                        <div id="lastnameHelp" class="form-text">Example: Gomez</div>
+                    </div>
+                    <div class="mb-3 col-sm-12">
+                        <label for="InputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control w-75" id="InputEmail" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">Example: user123@liverpooldrinks.com</div>
+                    </div>
+                    <div class="mb-3 col-sm-5">
+                        <label for="Country" class="form-label">Country</label>
+                        <select class="form-select w-75" aria-label="" required>
+                            <option value="AR" selected>Argentina</option>
+                            <option value="UR">Uruguay</option>
+                            <option value="CL">Chile</option>
+                            <option value="BR">Brasil</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-sm-4">
+                        <label class="form-label mt-2" for="postalCode">Zip</label>
+                        <input id="coupon" aria-labelledby="postalCode" test-id="postalCode" placeholder="" name="postalCode" class="form-control w-100" type="text" autocomplete="off" value="" required>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">Cash</label>
+                          </div>
+                        <div class="form-check col-sm-10">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" disabled>
+                            <label class="form-check-label" for="gridRadios2">Credit Card / Debit Card</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-sm-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                          <label class="form-check-label" for="gridCheck">I agree to the terms of use, and the privacy policy.</label>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="../Error 404/Index.html" class="btn btn-success border-1 border-dark mt-4 me-2 px-5">Pay</a>
+                        <button type="reset" class="btn btn-danger border-1 border-dark b mt-4 px-5">Reset</button>
+                    </div>
+                </form>
+                <div class="col-sm-4 mt-4">
+                    <div class="card boxPromo mb-3">
+                        <div class="card-header">
+                            Buy details
+                        </div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <img src="Assets/Img/jwBlackLabel.jpg" class="card-img-top imgOptions" alt="Vodka absolut raspberri">
+                                <div class="card-body">
+                                    <h5 class="card-title">Johnnie Walker Black Label</h5>
+                                    <p class="m-0 fst-italic">Amount: 1</p>
+                                    <p class="m-0 fst-italic">Price: AR$10.500</p>
+                                    <button type="button" class="btn btn-outline-danger mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr class="m-0">
+                            <div class="d-flex">
+                                <img src="Assets/Img/absoluteRaspberri.jpg" class="card-img-top imgOptions" alt="Vodka absolut raspberri">
+                                <div class="card-body">
+                                    <p class="fw-semibold fs-5 mb-1">Absolute Raspberri 700ml</p>
+                                    <p class="m-0 fst-italic">Amount: 2</p>
+                                    <p class="m-0 fst-italic">Price: AR$4.250</p>
+                                    <p class="mt-2 mb-0 fst-italic">Subtotal: AR$9.500</p>
+                                    <button type="button" class="btn btn-outline-danger mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card boxPromo mb-3">
+                        <div class="bg-body-secondary">
+                            <h5 class="pt-3 ps-3">Billing</h5>
+                            <div class="card-body pt-0">
+                                <hr>
+                                <p class="m-0 mt-1 fst-italic">Subtotal: AR$ 20.000</p>
+                                <p class="m-0 fst-italic">Discount: -AR$ 8.000</p>
+                                <hr>
+                                <p class="m-0 fst-italic fw-semibold">Total to pay: AR$ 12.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="pt-3 bg-dark mt-5 footerGeneral">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-2  justify-content-center align-item-center">
+                    <img class="logo" src="Assets/Img/logo1.jpg" alt="logo de bebidas">
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-content-center flex-column">
+                    <ul class="d-flex flex-column">
+                        <li class="footerTitle">Shopping</li>
+                        <li class="footerList">Trending Drinks</li>
+                        <li class="footerList">Store</li>
+                        <li class="footerList">Sale</li>
+                        <li class="footerList">Kind of drinks</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-content-center flex-column">
+                    <ul class="d-flex flex-column">
+                        <li class="footerTitle">Marks</li>
+                        <li class="footerList">Coca Cola</li>
+                        <li class="footerList">Vittone</li>
+                        <li class="footerList">Corona</li>
+                        <li class="footerList">Beefeater</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-content-center flex-column">
+                    <ul class="d-flex flex-column">
+                        <li class="footerTitle">Link</li>
+                        <li class="footerList">Contact Us</li>
+                        <li class="footerList">Payment Methods</li>
+                        <li class="footerList">Delivery</li>
+                        <li class="footerList">Return & Exchanges</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 text-center">
+                    <a href="aboutus.html" class="aboutus">About Us</a></p>
+                </div>
+                <div class="col-md-12 text-center">
+                    <p class="copy">Copyright &copy; 2023 all right reserved</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
